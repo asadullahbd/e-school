@@ -1,0 +1,536 @@
+/* Poppins font  */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap");
+
+/* preset  */
+*,
+html,
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+    list-style-type: none;
+}
+
+:root {
+    font-size: 10px;
+}
+
+p {
+    font-weight: 400;
+    font-size: 1.6rem;
+}
+
+a {
+    text-decoration: none;
+}
+
+header ul li:hover:last-child,
+header .hero button:hover,
+.courses .best-courses button:hover {
+    background-color: rgba(33, 181, 114, 0.8);
+    transition: all 0.3s;
+}
+
+/* preset  */
+
+/* header  */
+header {
+    width: 144rem;
+    height: 57.6rem;
+    background-color: #f0fff0;
+    padding: 3rem 21.2rem;
+}
+
+/* nav section start  */
+header nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header nav i{
+    display: none;
+}
+
+header ul {
+    display: flex;
+    gap: 7.6rem;
+}
+
+header ul li:last-child {
+    background-color: #21b573;
+    border-radius: 3.3rem;
+    padding: 0.4rem 1.2rem;
+    color: #ffffff;
+}
+
+header ul a {
+    font-size: 1.6rem;
+    color: #000000;
+}
+
+header ul li:last-child a {
+    font-size: 1.6rem;
+    color: #ffffff;
+}
+
+header .logo img {
+    width: 19.8rem;
+    height: 5.9rem;
+}
+
+/* style for underline animation on nav item start*/
+header ul li {
+    position: relative;
+}
+
+nav ul li::after {
+    content: "";
+    width: 100%;
+    height: 0.2rem;
+    background-color: #21b573;
+    position: absolute;
+    bottom: 0.8rem;
+    left: 0;
+    transition: all 0.3s;
+    border-radius: 0.3rem;
+    transform: scale(0, 0);
+}
+
+nav ul li:last-child::after {
+    content: "";
+    width: 0;
+    height: 0;
+    background-color: transparent;
+}
+
+nav ul li:hover::after {
+    transform: scale(1, 1);
+}
+
+/* style for underline animation on nav item ends */
+
+/* nav section ends  */
+
+/* hero section  */
+.hero {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.hero p:first-child {
+    color: #fd511a;
+}
+
+.hero h1 {
+    font-size: 4.8rem;
+    font-weight: 700;
+}
+
+.hero h1 .highlight {
+    color: #21b573;
+}
+
+.hero .hero-description {
+    color: #6c6b6b;
+    margin-top: 1.5rem;
+    margin-bottom: 1.5rem;
+}
+
+.hero button {
+    background-color: #21b573;
+    border-radius: 3.3rem;
+    padding: 0.4rem 1.2rem;
+    color: #ffffff;
+    border: none;
+    font-size: 1.6rem;
+    font-weight: 400;
+}
+
+.hero img {
+    width: 55.4rem;
+    height: 34.6rem;
+}
+/* hero section ends  */
+
+/* header ends */
+
+/* courses section start  */
+.courses {
+    width: 144rem;
+    padding: 3rem 21.2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.course-details {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.courses .course {
+    background-color: #f8fffb;
+    width: 27rem;
+    height: 27rem;
+    border-radius: 1rem;
+    gap: 2.9rem;
+    margin-left: 2.9rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.courses .course:hover {
+    background-color: #ffffff;
+    box-shadow: 0 2rem 4rem rgba(0, 0, 0, 0.1);
+}
+
+.courses .course:first-child {
+    margin-left: 0;
+}
+
+.courses .course h3 {
+    font-weight: 500;
+    font-size: 2.4rem;
+    color: #413960;
+}
+
+.courses .course p {
+    font-weight: 400;
+    font-size: 1.6rem;
+    color: #585859;
+}
+
+.blue-book {
+    width: 6.6rem;
+    height: 8.5rem;
+}
+
+.pen-writing {
+    width: 8rem;
+    height: 8.3rem;
+}
+.pen {
+    width: 7.5rem;
+    height: 8rem;
+}
+.yellow-book {
+    width: 6.8rem;
+    height: 7.6rem;
+}
+
+.courses h2 {
+    font-weight: 700;
+    font-size: 3.6rem;
+    color: #413960;
+    margin-top: 9.8rem;
+    margin-bottom: 8.6rem;
+}
+
+.best-courses {
+    display: flex;
+    gap: 3rem;
+}
+
+.best-courses .course-premium {
+    width: 37rem;
+    height: 48.3rem;
+    padding: 1.9rem;
+    background-color: #ffffff;
+    box-shadow: 0 1rem 4rem rgba(0, 0, 0, 0.1);
+    border-radius: 1.8rem;
+}
+
+.best-courses .course-premium img {
+    margin-bottom: 1.9rem;
+    width: 33.1rem;
+    height: 23.4rem;
+}
+
+.best-courses .course-premium h3 {
+    margin-bottom: 0.3rem;
+    font-weight: 500;
+    font-size: 2.4rem;
+}
+
+.best-courses .course-premium p {
+    margin-bottom: 1.9rem;
+    font-weight: 400;
+    font-size: 1.6rem;
+}
+
+.best-courses .course-premium button {
+    margin-bottom: 3.4rem;
+    background-color: #21b573;
+    border-radius: 3.3rem;
+    padding: 0.6rem 1rem;
+    color: #ffffff;
+    border: none;
+    font-weight: 400;
+    font-size: 1.6rem;
+}
+
+.course-premium .info {
+    display: flex;
+}
+
+.courses .info {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.courses .info .date {
+    display: flex;
+    align-items: center;
+}
+
+.courses .info i {
+    margin-right: 0.6rem;
+    font-weight: 500;
+    font-size: 1.6rem;
+    color: #585859;
+}
+
+.courses .info p {
+    margin-top: 2rem;
+    font-weight: 500;
+    font-size: 1.6rem;
+    color: #585859;
+}
+
+.courses .info .seat {
+    display: flex;
+    align-items: center;
+}
+/* courses section end  */
+/* testimonial section start  */
+
+section.testimonial {
+    width: 144rem;
+    padding: 3rem 21.2rem;
+}
+
+section.testimonial h2 {
+    font-size: 3.6rem;
+    font-weight: 700;
+    color: #000000;
+    margin-top: 7.1rem;
+    margin-bottom: 6.6rem;
+    text-align: center;
+}
+
+.testimonial .feedback {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 10.6rem;
+}
+
+.testimonial .feedback p {
+    width: 58rem;
+    font-size: 1.6rem;
+    font-weight: 400;
+}
+
+.testimonial .feedback img {
+    width: 12rem;
+    height: 12rem;
+    margin-right: 5.2rem;
+}
+
+/* testimonial section end  */
+
+/* footer start  */
+footer {
+    background-color: #282531;
+    width: 144rem;
+    height: 36.9rem;
+    padding: 3rem 21.2rem;
+}
+
+footer .top {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 5.5rem;
+    margin-bottom: 7.6rem;
+}
+
+footer .top .col:first-child {
+    margin-right: 6rem;
+}
+
+footer .top p {
+    font-weight: 400;
+    font-size: 1.6rem;
+    color: #ffffff;
+}
+
+footer .top h3 {
+    font-weight: 700;
+    font-size: 1.8rem;
+    color: #ffffff;
+}
+
+footer .top a {
+    font-weight: 400;
+    font-size: 1.6rem;
+    color: #ffffff;
+    display: block;
+}
+
+footer .bottom {
+    text-align: center;
+    color: #cdcdcd;
+    font-weight: 400;
+    font-size: 1.6rem;
+}
+
+/* footer ends  */
+/* footer ends  */
+
+/* MEDIA QUERIES START  */
+@media (max-width: 768px) {
+    header nav ul{
+        width: 100vw;
+        height: 100vh;
+        position: fixed;
+        left: -100%;
+        bottom: 0;
+        background-color: #f0fff0;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        z-index: 3;
+        gap: 0;
+        transition: all 0.3s ease;
+    }
+
+    header nav ul li{
+        background-color: white;
+        padding: .8rem 1rem;
+        margin: .6rem 0;
+        border-radius: .4rem;
+    }
+
+    header nav ul li:hover{
+        background-color: rgba(255,255,255,0.8);
+    }
+
+    header nav ul li a{
+        font-size: 4.5rem;
+    }
+
+    header ul li:last-child a {
+        font-size: 4.5rem;
+        color: #ffffff;
+        text-align: right;
+    }
+
+    .bi-x-lg{
+        margin-right: 1rem;
+        cursor: pointer;
+    }
+
+    .bi-x-lg:hover{
+        background-color: #21b573;
+        border-radius: .4rem;
+        padding: 0 .8rem;
+    }
+
+    header{
+        padding: 2rem;
+        position: relative;
+    }
+
+    header .logo#logo{
+        position: fixed;
+        top: .8rem;
+        left: 0;
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        box-shadow: 0 1rem 3rem rgba(0, 0, 0, 0.1);
+        border-radius: .4rem;
+        background-color: #f0fff0;
+        padding: .6rem .8rem;
+    }
+
+    header nav i{
+        display: inline-block;
+        font-size: 3.6rem;
+        margin-left: auto;
+        cursor: pointer;
+    }
+
+
+    header,
+    section,
+    footer,
+    section.courses,
+    section.testimonial {
+        width: 100vw;
+        /* height: 100vh; */
+        padding: 1.2rem 1.8rem;
+    }
+
+    .hero {
+        flex-direction: column;
+        margin-top: 10rem;
+    }
+
+    section .course-details {
+        flex-wrap: wrap;
+        margin-top: 2rem;
+    }
+
+    .courses .course{
+        margin-left: 0;
+    }
+    
+
+    .best-courses {
+        flex-wrap: wrap;
+        gap: 1rem;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .best-courses .course-premium {
+        width: calc(37rem - 10%);
+        height: calc(48.3rem - 10%);
+    }
+
+    .best-courses .course-premium img {
+        width: 100%;
+        height: 100%;
+    }
+
+    .testimonial .feedback {
+        flex-direction: column;
+    }
+
+    .testimonial .feedback img{
+        margin-bottom: 2rem;
+    }
+
+    body footer{
+        height: 100%;
+    }
+    
+    
+    body footer .top {
+        flex-wrap: wrap;
+        margin-bottom: 1rem;
+    }
+
+    body footer .top  .col{
+        padding: 1.2rem;
+    }
+}
+/* MEDIA QUERIES ENDS  */
